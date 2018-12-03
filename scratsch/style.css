@@ -3,6 +3,7 @@ p {
   background-color: lightgrey;
   margin-left: 1em;
   margin-right: 1em;
+  color:#2B468C;
 }
 
 p#footer {
@@ -24,5 +25,6 @@ p.warning {
   text-shadow: 1px 1px 1px black;
 }
 p.warning::before {
-  content:"WARNING!:"
+  content:"WARNING!:";
+
 }
