@@ -1,0 +1,26 @@
+h1, h2, h3 {
+  font-family: 'Slabo 27px', serif;
+  color:rgb(31, 23, 209);
+  text-align: center;
+  text-transform: uppercase;
+}
+p b {
+  color:blue;
+  width: 60px;
+}
+.info, .school, .experience, #skills, #hobby  {
+  border:5px solid black;
+  overflow: hidden;
+  background: lightgreen;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+.private1, .private2, div img {
+   width:;
+   float: left;
+   margin: 30px;
+ }
+ div img:hover {
+   border-radius: 20%;
+   border:2px solid black;
+ }

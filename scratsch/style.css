@@ -28,3 +28,8 @@ p.warning::before {
   content:"WARNING!:";
 
 }
+em {
+  font-style: italic;
+  text-decoration: underlined;
+  text-shadow: 3px 3px 3px red;
+}

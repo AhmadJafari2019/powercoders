@@ -2,23 +2,66 @@
 <html>
   <head>
   <title>git cheatsheet</title>
+  <link href="git.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Unlock" rel="stylesheet">
   </head>
   <body>
 <div id="git">
-<h2>Git</h2>
-  <ul>
-    <li>Git init: For making a Repository in the current directory.</li>
-    <li>Git log: The git log command displays committed snapshots. It lets you list the project history, filter it, and search for specific changes. </li>
-    <li>Git add: The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.</li>
-    <li>Git status: It simply shows you what's been going on with git add and git commit. The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git.</li>
-    <li>Git commit -m "content":It saves or commited the chainging to the Repo at the current stage. </li>
-    <li>Git diff: This form is to view the changes you made relative to the index (staging area for the next commit).</li>
-    <li>Git diff --cached:This form is to view the changes you staged for the next commit relative to the named (commit). </li>
-    <li>Git config --global user.name:Define the author name to be used for all commits in the current repository. Typically, you’ll want to use the --global flag to set configuration options for the current user.</li>
-    <li>Git remote: List the remote connections you have to other repositories.</li>
-    <li>Git remote -v: Same as the above command, but include the URL of each connection.</li>
-    <li>Git remote add name url: Create a new connection to a remote repository. After adding a remote, you’ll be able to use name as a convenient shortcut for url in other Git commands.</li>
-  </ul>
+  <h1>Git</h1>
+  <table class="puzzle">
+    <tr>
+      <th>GIT NAME</th>
+      <th>DESCRIPTION</th>
+    </tr>
+    <tr>
+      <td>Git init</td>
+      <td>For making a Repository in the current directory.</td>
+    </tr>
+    <tr>
+      <td>Git log</td>
+      <td>The git log command displays committed snapshots. It lets you list the project history, filter it, and search for specific changes. </td>
+    </tr>
+    <tr>
+      <td>Git add</td>
+      <td>The git add command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.</td>
+    </tr>
+    <tr>
+      <td>Git status</td>
+      <td>It simply shows you what's been going on with git add and git commit. The git status command displays the state of the working directory and the staging area. It lets you see which changes have been staged, which haven’t, and which files aren’t being tracked by Git.</td>
+    </tr>
+    <tr>
+      <td>Git commit -m "content"</td>
+      <td>It saves or commited the chainging to the Repo at the current stage.</td>
+    </tr>
+    <tr>
+      <td>Git diff</td>
+      <td>This form is to view the changes you made relative to the index (staging area for the next commit)</td>
+    </tr>
+    <tr>
+      <td>Git diff --cached</td>
+      <td>This form is to view the changes you staged for the next commit relative to the named (commit).</td>
+    </tr>
+    <tr>
+      <td>Git config --global user.name</td>
+      <td>Define the author name to be used for all commits in the current repository. Typically, you’ll want to use the --global flag to set configuration options for the current user.</td>
+    </tr>
+    <tr>
+      <td>Git remote</td>
+      <td>Git remote: List the remote connections you have to other repositories.</td>
+    </tr>
+    <tr>
+      <td>Git remote -v</td>
+      <td>Same as the above command, but include the URL of each connection.</td>
+    </tr>
+    <tr>
+      <td>Git remote add name url</td>
+      <td> Create a new connection to a remote repository. After adding a remote, you’ll be able to use name as a convenient shortcut for url in other Git commands.</td>
+    </tr>
+
+
+
+
+  </table>
 </div>
 
 
