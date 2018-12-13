@@ -1,26 +1,55 @@
-h1, h2, h3 {
-  font-family: 'Slabo 27px', serif;
-  color:rgb(31, 23, 209);
-  text-align: center;
-  text-transform: uppercase;
+body {
+  margin: 1em;
 }
-p b {
-  color:blue;
-  width: 60px;
+
+#info {
+  position: relative;
+  background-color: rgba(73, 207, 155, 0.28);
+  margin: 0 ;
 }
-.info, .school, .experience, #skills, #hobby  {
-  border:5px solid black;
-  overflow: hidden;
-  background: lightgreen;
+
+#private {
+  margin-left: 1em;
+  font-weight: bold;
+}
+
+#private table {
+  border:none;
+  line-height: 1.5;
+}
+#Private table tr td {
   padding-left: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
-.private1, .private2, div img {
-   width:;
-   float: left;
-   margin: 30px;
- }
- div img:hover {
-   border-radius: 20%;
-   border:2px solid black;
- }
+
+img {
+  height: 200px;
+
+}
+
+h1 {
+    color:rgb(10, 46, 198);
+    font-size: 40px;
+    margin:0px;
+    text-align: center;
+    text-shadow: 3px 2px 1px white;
+    text-transform: uppercase;
+}
+
+#school {
+  position: relative;
+  background-color: rgba(50, 89, 74, 0.28);
+  padding: 20px;
+}
+
+#experience, #skills, #hobby {
+  position: relative;
+  background-color: rgba(73, 207, 155, 0.28);
+  margin: 0;
+  padding: 20px;
+
+}
+
+#school, #experience {
+  border: 1px solid black;
+}
