@@ -4,19 +4,10 @@
   function greet(name) {
     console.log('Hello,' + name);
   }
-  function setClassTip(event) {
-    let el = document.getElementById('mypara');
-    el.className= 'tip';
-    console.log('event')
-  }
+  
 
-  function clearClass(event) {
+  function setClass(event,className) {
     let el = document.getElementById('mypara');
-    el.className= '';
-    console.log('event');
-  }
-  function setClassWarning(event) {
-    let el = document.getElementById('mypara');
-    el.className= 'warning';
+    el.className= className;
     console.log('event');
   }
