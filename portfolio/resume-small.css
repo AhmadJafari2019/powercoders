@@ -1,0 +1,14 @@
+#private, #experience, #skills,
+#school, #hobby {
+ background-color: #d3d3d333;
+ position: relative;
+ top: 0;
+ left: 0
+ border:1px solid black;
+}
+
+#image img {
+ border:1px solid black;
+ border-radius: 15px;
+ margin-bottom: 20px;
+}

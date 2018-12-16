@@ -1,5 +1,96 @@
 
-  #image {
-    float: right;
-  margin-bottom: 10px;
-  }
+#private tr td {
+  padding-right: 30px;
+}
+
+#container {
+  margin: 1em;
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+    padding: 0;
+    text-align: center;
+    text-shadow: 4px 4px 3px blue;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#info {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#private {
+  position:absolute;
+  top: 8em;
+  left: 3em;
+  background: #d3d3d333;
+  width: 43%;
+}
+
+table tr td  span {
+  padding-right:25px;
+  font-weight: bold;
+  font-size:20px;
+}
+
+#image {
+  position: relative;
+  top:0em;
+  left: 37em;
+  width: 45%;
+}
+
+#image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 188px;
+}
+
+#school {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #d3d3d333;
+  width: 45%;
+  padding: 10px;
+}
+
+#experience {
+  position: absolute;
+  top: 24em;
+  left: 37em;
+  background-color: #d3d3d333;
+  width: 45%;
+  padding: 10px;
+  line-height: 2.5;
+}
+#skills {
+  position: relative;
+  top: 0
+  left:0;
+  padding: 10px;
+  width: 45%;
+  background-color: #d3d3d333;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+#hobby {
+  position: absolute;
+  top:55em;
+  left: 37em;
+  width: 45%;
+  background-color: #d3d3d333;
+  line-height: 2;
+}
+
+#image, #experience, #hobby {
+  margin-left: 100px;
+}
+
+#info, #schoolex, #hobbyskill {
+  margin-bottom: 20px;
+}
