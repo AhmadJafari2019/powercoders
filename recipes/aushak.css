@@ -7,9 +7,11 @@ body {
   background: lightblue;
   font-family: 'Merriweather', serif;
 }
+
 body ul li {
   line-height: 1.5;
 }
+
 p img {
   display:block;
   border:5px solid pink;

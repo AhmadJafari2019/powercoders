@@ -1,0 +1,38 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#ingredients {
+  left: 35%;
+  width: 300px;
+}
+
+#method {
+  position: absolute;
+  top: 0;
+  left: calc(35% + 305px);
+  margin-top: 0;
+}
+
+/** Everything above works */
+
+#ingredients {
+  left: 0;
+  width: 30%;
+}
+
+#method {
+  left: 35%;
+  width: 30%;
+}
+
+#image #qabeliimg {
+  display: none;
+}
+#image .picgoodboy {
+  display: inline;
+  position: relative;
+  top: 10%;
+  left:70%;
+}
