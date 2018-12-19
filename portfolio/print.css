@@ -1,0 +1,65 @@
+@media print {
+  body {
+    padding-left: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 12pt;
+  }
+
+   #firsth1, #school h1, #experience h1, #skills h1, #hobby h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24pt;
+  }
+
+  #secondh1 {
+    display:none;
+  }
+
+  #container {
+    width: 100%;
+    height: auto;
+    border-radius: 10px solid black;
+    margin:10px 10px 10px 10px;
+  }
+
+  #info, #schoolex, #skillhobby {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+    border-bottom: 1px solid black;
+  }
+
+  #private, #image, #skills, #experience, #hobby {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  #school, #experience {
+    line-height: 1.2;
+  }
+
+  #private td {
+    padding-left: 35px;
+    line-height: 1.5;
+  }
+
+  #image img {
+    width: 300px;
+    height: auto;
+    padding-left: 12%;
+  }
+
+  #private, #image, #school, #experience, #skills, #hobby {
+    background: #ede1ee80;
+    border-radius: 10%;
+    padding: 15px;
+    width: 45%;
+  }
+
+  #experience {
+    line-height: 2;
+  }
+}

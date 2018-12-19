@@ -6,12 +6,23 @@
   margin: 1em;
   padding: 20px;
   width: 100%;
+  height: auto;
+  border: 2px solid black;
 }
 
-h1 {
+#secondh1 {
+  display: none;
+}
+
+#firsth1 {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h1:not(#firsth1) {
     padding: 0;
     text-align: center;
-    text-shadow: 4px 4px 3px blue;
+    text-shadow: 4px 4px 3px white;
     text-transform: uppercase;
     text-decoration: underline;
 }
@@ -23,10 +34,11 @@ h1 {
 
 #private {
   position:absolute;
-  top: 8em;
-  left: 3em;
+  top: 11em;
+  left: 3.5em;
   background: #d3d3d333;
   width: 43%;
+  padding: 20px;
 }
 
 table tr td  span {
@@ -43,23 +55,23 @@ table tr td  span {
 }
 
 #image img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 188px;
 }
 
 #school {
   position: relative;
   top: 0;
-  left: 0;
+  left: 1em;
   background-color: #d3d3d333;
   width: 45%;
-  padding: 10px;
+  padding: 20px;
 }
 
 #experience {
   position: absolute;
-  top: 24em;
+  top: 30em;
   left: 37em;
   background-color: #d3d3d333;
   width: 45%;
@@ -75,11 +87,12 @@ table tr td  span {
   background-color: #d3d3d333;
   line-height: 1;
   margin-top: 20px;
+  left:1em;
 }
 
 #hobby {
   position: absolute;
-  top:55em;
+  top:61em;
   left: 37em;
   width: 45%;
   background-color: #d3d3d333;
@@ -92,4 +105,3 @@ table tr td  span {
 
 #info, #schoolex, #hobbyskill {
   margin-bottom: 20px;
-}

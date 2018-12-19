@@ -1,96 +1,55 @@
+body {
+  padding-left: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
 
-#private tr td {
-  padding-right: 30px;
+ #firsth1, #school h1, #experience h1, #skills h1, #hobby h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#secondh1 {
+  display:none;
 }
 
 #container {
-  margin: 1em;
-  padding: 20px;
   width: 100%;
+  height: auto;
+  border-radius: 10px solid black;
+  margin:10px 10px 10px 10px;
 }
 
-h1 {
-    padding: 0;
-    text-align: center;
-    text-shadow: 4px 4px 3px blue;
-    text-transform: uppercase;
-    text-decoration: underline;
+#info, #schoolex, #skillhobby {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
-#info {
-    padding: 15px;
-    margin-bottom: 20px;
+#private, #image, #skills, #experience, #hobby {
+  justify-content: center;
+  align-items: center;
 }
 
-#private {
-  position:absolute;
-  top: 8em;
-  left: 3em;
-  background: #d3d3d333;
-  width: 43%;
-}
-
-table tr td  span {
-  padding-right:25px;
-  font-weight: bold;
-  font-size:20px;
-}
-
-#image {
-  position: relative;
-  top:0em;
-  left: 37em;
-  width: 45%;
+#private td {
+  padding-left: 35px;
+  line-height: 1.5;
 }
 
 #image img {
-  width: 200px;
-  height: 200px;
-  border-radius: 188px;
+  width: 300px;
+  height: auto;
+  padding-left: 12%;
 }
 
-#school {
-  position: relative;
-  top: 0;
-  left: 0;
-  background-color: #d3d3d333;
+#private, #image, #school, #experience, #skills, #hobby {
+  background: #ede1ee80;
+  border-radius: 10%;
+  padding: 15px;
   width: 45%;
-  padding: 10px;
 }
 
 #experience {
-  position: absolute;
-  top: 24em;
-  left: 37em;
-  background-color: #d3d3d333;
-  width: 45%;
-  padding: 10px;
-  line-height: 2.5;
-}
-#skills {
-  position: relative;
-  top: 0
-  left:0;
-  padding: 10px;
-  width: 45%;
-  background-color: #d3d3d333;
-  line-height: 1;
-  margin-top: 20px;
-}
-
-#hobby {
-  position: absolute;
-  top:55em;
-  left: 37em;
-  width: 45%;
-  background-color: #d3d3d333;
   line-height: 2;
-}
-
-#image, #experience, #hobby {
-  margin-left: 100px;
-}
-
-#info, #schoolex, #hobbyskill {
-  margin-bottom: 20px;
 }
