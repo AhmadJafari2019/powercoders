@@ -14,3 +14,14 @@
 .tip::before {content: "TIP: ";}
 
 .warning::before, .tip::before {font-weight: bold;}
+
+
+
+
+#button {
+  background: darkblue;
+  width:100%;
+  text-align: center;
+  height: 60px;
+  color:#ffff;
+}

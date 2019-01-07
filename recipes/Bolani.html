@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Pic 1</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="bolani.css" rel="stylesheet" type="text/css">
+    <script src="bolani.js"></script>
 
   </head>
   <body>
-    <div id="food">
-      <h1>Bolani</h1>
-      <p><img src="Bolani.jpg" alt="Bolani AFG"></p>
-    </div>
+    <div id="container">
+      <div id="food">
+        <h1>Bolani</h1>
+      </div>
+      <div id="im">
+        <img src ="b1.jpg">
+      </div>
 
-    <div id="method">
-      <h1>Method</h1>
-      <p>  1- Mix flour and salt together. ...</p>
-      <p>  2- Knead dough for 10 minutes.</p>
-      <p>  3- Place dough in lightly oiled bowl, cover with a cloth, and let rest for one hour. ...</p>
-      <p>  4- Scrub potatoes clean, place in a pot, cover by 2 inches with cold water, add a good pinch of salt, and bring to a boil over high heat.</p>
-    </div>
+
+      <div id="ingredients">
+        <h1><span id="hide-list" onclick="hide(event);"></span>-</span><span id="show-list" class="hidden" onclick="show(event);">+</span><em>Ingredients</em></h1>
+        <ul id="ingredients-list">
+        <li>  2 medium potatoes</li>
+        <li>½ c chopped cilantro</li>
+        <li>½ c chopped scallions (white and green parts)</li>
+        <li>2 tbsp. olive oil</li>
+        <li>1 ½ tsp salt</li>
+        <li>1 tsp ground black pepper</li>
+        </ul>
+      </div>
+
+      <div id="methods">
+        <h1><span id="hide12-list" onclick="hide1(event);">-</span><span id="show12-list" class="hidden" onclick="show1(event);">+</span><em>Method</em></h1>
+
+        <div id="method-list">
+          <p>  1- Mix flour and salt together. ...</p>
+          <p>  2- Knead dough for 10 minutes.</p>
+          <p>  3- Place dough in lightly oiled bowl, cover with a cloth, and let rest for one hour. ...</p>
+          <p>  4- Scrub potatoes clean, place in a pot, cover by 2 inches with cold water, add a good pinch of salt, and bring to a boil over high heat.</p>
+        </div>
+    <div>
   </body>
 </html>
