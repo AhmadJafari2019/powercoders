@@ -1,3 +1,10 @@
 button {
     background: #ff0000;
 }
+
+body {
+    background: antiquewhite;
+    width:600px;
+    height:600px;
+
+}
