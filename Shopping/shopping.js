@@ -7,14 +7,24 @@ document.addEventListener('DOMContentLoaded', function (event) {
         ul.appendChild(li);
 
     });
+
+    document.querySelector('input').addEventListener('keyup', function(event){
+    if(event.key === "Enter") {
+        let inputBox = document.getElementById('item');
+        let li = createNewListItem(inputBox.value);
+        document.querySelector('ul').appendChild(li);
+    }
+
+    });
 });
+
 
 function createNewListItem(itemName) {
     let listItem = document.createElement('li');
     let listText = document.createElement('span');
     listItem.textContent = itemName;
 
-    let deleteButton = document.createElement('buttton');
+    let deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
 
     deleteButton.addEventListener('click', function (event) {
@@ -26,8 +36,6 @@ listItem.appendChild(listText);
 listItem.appendChild(deleteButton);
 return listItem;
 }
-
-
 
 
 

@@ -8,3 +8,16 @@ body {
     height:600px;
 
 }
+
+button {
+    background: azure;
+}
+.delete-button {
+    border-radius: 10px;
+}
+ul button {
+    margin-left: 20px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    background: red;
+}
