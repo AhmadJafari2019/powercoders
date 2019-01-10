@@ -5,17 +5,21 @@ document.addEventListener('DOMContentLoaded', function (event) {
         let li = createNewListItem(inputBox.value);
         let ul = document.querySelector('ul');
         ul.appendChild(li);
+        inputBox.value = '';
 
     });
 
-    document.querySelector('input').addEventListener('keyup', function(event){
-    if(event.key === "Enter") {
-        let inputBox = document.getElementById('item');
-        let li = createNewListItem(inputBox.value);
-        document.querySelector('ul').appendChild(li);
-    }
+    document.querySelector('input').addEventListener('keyup', function(event) {
+        if (event.key === "Enter") {
+            let inputBox = document.getElementById('item');
+            let li = createNewListItem(inputBox.value);
+            document.querySelector('ul').appendChild(li);
+            inputBox.value = '';
+
+        }
 
     });
+
 });
 
 
