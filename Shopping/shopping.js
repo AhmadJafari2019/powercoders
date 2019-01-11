@@ -1,24 +1,30 @@
 document.addEventListener('DOMContentLoaded', function (event) {
+    let inputBox = document.getElementById('item');
+    let shoppingList = document.querySelector('ul');
+
     document.querySelector('button').addEventListener('click', function (event) {
-        let inputBox = document.getElementById('item');
-        console.log(inputBox.value);
-        let li = createNewListItem(inputBox.value);
-        let ul = document.querySelector('ul');
-        ul.appendChild(li);
-        inputBox.value = '';
-
-    });
-
-    document.querySelector('input').addEventListener('keyup', function(event) {
-        if (event.key === "Enter") {
-            let inputBox = document.getElementById('item');
-            let li = createNewListItem(inputBox.value);
-            document.querySelector('ul').appendChild(li);
+        if (inputBox.value.trim()!==''){
+            shoppingList.appendChild(createNewListItem(inputBox.value.trim()));
             inputBox.value = '';
-
         }
 
+       inputBox.focus();
+
     });
+
+    inputBox.addEventListener('keyup', function(event) {
+        if(inputBox.value.trim() !== '') {
+             if (event.key === "Enter") {
+                shoppingList.appendChild(createNewListItem(inputBox.value.trim()));
+                inputBox.value = '';
+
+            }
+        }
+
+
+    });
+
+    inputBox.focus();
 
 });
 
@@ -36,9 +42,9 @@ function createNewListItem(itemName) {
         listItem.remove();
     });
 
-listItem.appendChild(listText);
-listItem.appendChild(deleteButton);
-return listItem;
+    listItem.appendChild(listText);
+    listItem.appendChild(deleteButton);
+    return listItem;
 }
 
 
@@ -52,92 +58,5 @@ return listItem;
 
 
 
-
-
-
-
-
-
-
-//with Va
-// document.addEventListener('DOMContentLoaded',function (event) {
-//     document.querySelector('button').addEventListener('click',function (event) {
-//         let inputBox = document.getElementById('item');
-//         console.log('inputBox.value');
-//
-//
-//
-//     });
-// });
-//
-//
-// function createNewListItem(itemName) {
-//     let li = document.createElement('li');
-//
-//     let span = document.createElement('span');
-//     let spanText = document.createTextNode(itemName);
-//     span.appendChild(spanText);
-//     li.appendChild(span);
-//
-//     let button = document.createElement('button');
-//     let text = document.createTextNode('delete');
-//     button.appendChild(text);
-//     li.appendChild(button);
-//     return li;
-//     createNewListItem();
-//
-// }
-//
-//
-//
-//
-//
-//
-//       function createNewListItem(itemName) {
-//          let li = document.createElement('li');
-//
-//           let span = document.createElement('span');
-//           let spanText= document.createTextNode('itemName');
-//           span.appendChild(spanText);
-//           span.innerText = itemName;
-//           li.appendChild(span);
-//
-//
-//           let button = document.createElement('button');
-//           let text = document.createTextNode('delete');
-//           button.appendChild(text);
-//           li.appendChild(button);
-//           return li;
-//       }
-// with chaining.
-//  document.addEventListener('DOMContentLoaded',function (event) {
-//      document.querySelector('button').addEventListener('click',function (event) {
-//          let inputBox = document.getElementById('item');
-//          console.log(document.getElementById('item').value);
-//
-//      });
-//
-// });
-//
-//
-//
-//   function createNewListItem(itemName) {
-//       let li = document.createElement('li');
-//
-//       let span = document.createElement('span');
-//       let spanText = document.createTextNode(itemName);
-//       span.appendChild(spanText);
-//       li.appendChild(span);
-//
-//       let button = document.createElement('button');
-//       let text = document.createTextNode('delete');
-//       button.appendChild(text);
-//       li.appendChild(button);
-//       return li;
-//
-//   }
-//
-//
-//
 
 
