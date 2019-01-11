@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="94b44525-4e25-4486-81e0-c6d4b7915912" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/shopping.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -33,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shopping.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="328">
+              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -42,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="300">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -65,8 +64,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shopping.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/shopping.js" />
         <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
@@ -145,7 +144,7 @@
       <workItem from="1547129671238" duration="25000" />
       <workItem from="1547129727685" duration="2811000" />
       <workItem from="1547162304706" duration="367000" />
-      <workItem from="1547193953894" duration="13503000" />
+      <workItem from="1547193953894" duration="14529000" />
     </task>
     <task id="LOCAL-00001" summary="Added an Input an label Element">
       <created>1546856461958</created>
@@ -189,11 +188,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547213684749</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="--- fixing inputBox(disabled/ enabled)---&#10;- Using property disabled = true;&#10;- Using property disbleed = false;">
+      <created>1547218573969</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547218573969</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53440000" />
+    <option name="totallyTimeSpent" value="54466000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -240,7 +246,8 @@
     <MESSAGE value="---Create Shopping List---&#10;- Using Keyup event to the Js file.&#10;- Using if  that statement conditionally executes a group of statements, depending on the value of an expression.&#10;- Adding Enter Key." />
     <MESSAGE value="-- Using (variable.value = '';) to make input empty." />
     <MESSAGE value="-- fixing inputBox(empty / spacedealing)---&#10;Using if function&#10;Using element.trim()" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- fixing inputBox(empty / spacedealing)---&#10;Using if function&#10;Using element.trim()" />
+    <MESSAGE value="--- fixing inputBox(disabled/ enabled)---&#10;- Using property disabled = true;&#10;- Using property disbleed = false;" />
+    <option name="LAST_COMMIT_MESSAGE" value="--- fixing inputBox(disabled/ enabled)---&#10;- Using property disabled = true;&#10;- Using property disbleed = false;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../cheatsheet/index.html">
@@ -259,15 +266,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="300">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shopping.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="328">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
         </state>
       </provider>
     </entry>

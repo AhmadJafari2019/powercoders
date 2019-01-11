@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-    let inputBox = document.getElementById('item');
-    let shoppingList = document.querySelector('ul');
-    let addItemButton = document.querySelector('button');
+    const inputBox = document.getElementById('item');
+    const shoppingList = document.querySelector('ul');
+    const addItemButton = document.querySelector('button');
 
     document.querySelector('button').addEventListener('click', function (event) {
         if (inputBox.value.trim()!==''){
@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 
 function createNewListItem(itemName) {
-    let listItem = document.createElement('li');
-    let listText = document.createElement('span');
+    const listItem = document.createElement('li');
+    const listText = document.createElement('span');
     listItem.textContent = itemName;
 
-    let deleteButton = document.createElement('button');
+    const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
 
     deleteButton.addEventListener('click', function (event) {

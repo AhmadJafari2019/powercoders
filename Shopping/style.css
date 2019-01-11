@@ -4,26 +4,29 @@ button {
 
 body {
     background: antiquewhite;
-    width:600px;
-    height:600px;
-
 }
 #wrapper {
     background: aliceblue;
-    width: 600px;
-    height: 600px;
+    width: 350px;
+    height: 300px;
     margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid green;
 }
 
 button {
-    background: azure;
+    border-radius: 10px;
+    background: black;
+    color: #fff;
 }
 .delete-button {
     border-radius: 10px;
+    background: black;
+    color: #fff;
 }
 ul button {
     margin-left: 20px;
     border-radius: 30px;
-    margin-bottom: 5            px;
-    background: red;
+    margin-bottom: 5px;
 }
