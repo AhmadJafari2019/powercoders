@@ -8,6 +8,12 @@ body {
     height:600px;
 
 }
+#wrapper {
+    background: aliceblue;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
 
 button {
     background: azure;
