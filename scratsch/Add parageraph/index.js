@@ -15,7 +15,7 @@
 
 
 function list() {
-    console.log('Hello');
+    console.log('Hello welt');
     let ptxt = document.createTextNode('item one');
     let htxt = document.createTextNode('item two');
     let gtxt = document.createTextNode('item three');
