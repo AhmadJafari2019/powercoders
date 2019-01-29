@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML TXT</title>
+  </head>
+  <body>
+    <p>Line 1 :document is a global Varriable. We call by the method "addEventListener" on the DOM object, wenn the Parameter "DOMContentLoaded" on the browser, should execute the second parameter, function anonymous as event listener. </p>
+    <p>Line 2 :const as a keyword. Defined a Varriable(inputBox),which takes the string id(item)Element to the DOM object in the global document Varriable. </p>
+    <p>Line 3 :const as a keyword.There is a "shoppingList" Varriable, which assigned to invok the method of "querySelector" to take "ul" Element to DOM object in the document global Varriable.</p>
+    <p>Line 4 :const as a keyword. There is a "addItemButton" Varriable, which assigned to invok the method of "querySelector" to take "button" Element to DOM object in the document global Varriable </p>
+    <p>Line 6 :Using "querySelector" method for the uniqe Element button to call "addEventListener" method which take the parameter click and function anonymous as event listener for click event on the addItemButton varriable </p>
+    <p>Line 7 :"if" is a discion keyword /function. It consider the the expression is true/false and it compares the trimed value of the inputBox with the empty ''. </p>
+    <p>Line 8 :invok or call the creatNewListItem` function, which takes inputBox.value.trimmed() and adds the Value/ amount of `creatNewListItem` function as child to the `shoppingList` variable. </p>
+    <p>Line 9 :difines the value of inputBox to the empty string''.</p>
+    <p>Line 10 :difines the value of the disabled attribute to true</p>
+    <p>Line 13 :invoke the focus() method to the inputBox Element/Varriable</p>
+    <p>Line 17:Invoks/calls the addEventListener method at the inputBox Varriable. This method takes 2 Parameter to DOM as event listener (keyup parameter and anonymous `function() ).</p>
+    <p>Line 18:"if" is a discion keyword /function. It consider the the expression is true/false and it compares the trimed value of the inputBox with the empty ''. </p>
+    <p>Line 19:defines the value of false for disabled attribute on the addItemButton Varriable.</p>
+    <p>Line 20:difines/ look at the condition of the `if` statement/function to be "true" or false. it compares if the `keyup` event equals to the string `Enter`</p>
+    <p>Line 21:invok or call the creatNewListItem` function, which takes inputBox.value.trimmed() and adds the Value/ amount of `creatNewListItem` function as child to the `shoppingList` variable. </p>
+    <p>Line 22:difines the value empty '' for inputBox Varriable </p>
+    <p>Line 27- "if" is a discion keyword /function. It consider the the expression is true/false and it compares the trimed value of the inputBox with the empty ''. </p>
+    <p>Line 28:difines the value of the disabled attribute to true</p>
+    <p>Line 32:calls focus() method for inputBox Varriable.</p>
+    <p>Der rest is repeated</p>
+  </body>
+</html>
