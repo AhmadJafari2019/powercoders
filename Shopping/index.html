@@ -9,13 +9,20 @@
   </head>
   <body>
     <div id="wrapper">
-      <h1>My Shopping List</h1>
+      <h1>
+        <span>Sales</span>
+       </h1>
       <div>
-        <lable for="item">Enter a new item</lable>
+        <lable class="text" for="item">Enter a new item</lable>
         <input type="text" id="item" placeholder="Type something to buy">
+        <br><br>
+        
+        <input type="text" id="quantity" placeholder="quantity">
+
         <button id="add"><i class="fas fa-shopping-basket fa-2x"></i></button>
-        <span id="item-warning" class="hidden"> You must enter some text before adding an item</span>
         <button id="clear">Clear list</button>
+        <span id="item-warning" class="hidden"> You must enter some text before adding an item</span>
+
       </div>
       <ul>
 

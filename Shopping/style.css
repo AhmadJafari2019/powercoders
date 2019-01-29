@@ -1,15 +1,26 @@
-body{
-    font-family: "Andale Mono";
-    background: url(bg.jpg);
-    background-size: cover;
-}
+/*body{*/
+    /*font-family: "Andale Mono";*/
+    /*background: url(bg.jpg);*/
+    /*background-size: cover;*/
+/*}*/
 
+body{
+    background: url(pic3.jpg);
+    background-size: cover;
+
+}
 button {
     background: #ff0000;
     border-bottom-color:red;
     border-top-color: blue;
     border-right-color: #f2e209;
     border-left-color:#09f281;
+    margin-bottom: 20px;
+}
+
+#quantity {
+    width: 60px;
+    text-align: center;
 }
 
 /*input {*/
@@ -20,31 +31,79 @@ button {
 /*}*/
 
 #wrapper {
-    background:#efecb6;
-    width: 450px;
-    height: 300px;
+    width: 300px;
+    height: 100%;
+    float: left;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid green;
+    background: url(pic4.jpg);
+    background-size: cover;
 }
 
-#wrapper h1 {
-    margin-top: 0px;
-    word-spacing: normal;
-    color: blue;
+#wrapper h1 span {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-family: 'Titan One', cursive;
+    font-size: 60px;
+    color: #000000;
+    text-shadow: 0 3px 0 #ff0000,
+    0 2px 0 #CCC,
+    0 3px 0 #CCC,
+    0 4px 0 #CCC,
+    0 5px 0 #CCC,
+    0 6px 0 transparent,
+    0 7px 0 transparent,
+    0 8px 0 transparent,
+    0 9px 0 transparent,
+    0 10px 10px rgba(0, 0, 0, .4);
+    font-style: normal;
+    position: relative;
+    display: inline;
+    box-decoration-break: clone;
+    padding: 0.1em 0.7em;
+    border-radius: 0.2em;
+    background: white;
+    transform: skewX(-10deg);
+}
+
+#wrapper h1 span:nth-child(2) { animation-delay: .1s; }
+#wrapper h1 span:nth-child(3) { animation-delay: .2s; }
+#wrapper h1 span:nth-child(4) { animation-delay: .3s; }
+#wrapper h1 span:nth-child(5) { animation-delay: .4s; }
+#wrapper h1 span:nth-child(6) { animation-delay: .5s; }
+#wrapper h1 span:nth-child(7) { animation-delay: .6s; }
+#wrapper h1 span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #CCC,
+        0 2px 0 #CCC,
+        0 3px 0 #CCC,
+        0 4px 0 #CCC,
+        0 5px 0 #CCC,
+        0 6px 0 #CCC,
+        0 7px 0 #CCC,
+        0 8px 0 #CCC,
+        0 9px 0 #CCC,
+        0 50px 25px rgba(0, 0, 0, .2);
+    }
 }
 
 button {
     border-radius: 10px;
     background: black;
     color: #fff;
+    margin-bottom: 20px;
 }
 
-button:hover{
-    //-webkit-transform: rotate(45deg);
-    -webkit-transform: rotate(-45deg);
-}
+/*button:hover{*/
+    /*//-webkit-transform: rotate(45deg);*/
+    /*-webkit-transform: rotate(-45deg);*/
+/*}*/
 
 /*ul button {
     margin-left: 20px;
@@ -63,4 +122,9 @@ button:hover{
 
 #item-warning.hidden {
     display: none;
+}
+.text {
+    font-size: 10px;
+    border: 1px solid black;
+    padding: 5px;
 }
