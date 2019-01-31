@@ -6,7 +6,6 @@ function domContentLoaded() {
   const addItemButton = document.querySelector('button');
   const clearButton = document.getElementById('clear');
 
-
   clearButton.addEventListener('click', function (event) {
     const listItem = document.querySelectorAll('li');
 
@@ -26,15 +25,18 @@ function domContentLoaded() {
   // lis[1]
   // lis[3]
 
-
   addItemButton.addEventListener('click', function (event) {
     const trimmedValue = inputBox.value.trim();
-
     if (trimmedValue === '') {
-      alert('koshad in khalie');
+      //alert('koshad in khalie');
       return;
     }
-    shoppingList.appendChild(createNewListItem(trimmedValue, quantityBox.value.trim()));
+
+    const item = {
+      name: trimmedValue,
+      quantity: quantityBox.value,
+    };
+    shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
     quantityBox.value = '';
     addItemButton.disabled = true;
@@ -54,12 +56,42 @@ function domContentLoaded() {
     if (event.key !== 'Enter') {
       return;
     }
-    shoppingList.appendChild(createNewListItem(trimmedValue, quantityBox.value.trim()));
+
+    const item = {
+      name: trimmedValue,
+      quantity: quantityBox.value,
+    };
+
+    shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
+    quantityBox.value = '';
     addItemButton.disabled = true;
     clearButton.disabled = false;
   });
+  inputBox.focus();
 
+  quantityBox.addEventListener('keyup', function (event) {
+    const trimmedValue = inputBox.value.trim();
+    addItemButton.disabled = inputBox.value.trim() === '';
+
+    if (trimmedValue === '') {
+      return;
+    }
+
+    if (event.key !== 'Enter') {
+      return;
+    }
+
+    const item = {
+      name: trimmedValue,
+      quantity: quantityBox.value,
+    };
+    shoppingList.appendChild(createNewListItem(item));
+    inputBox.value = '';
+    quantityBox.value = '';
+    addItemButton.disabled = true;
+    clearButton.disabled = false;
+  });
   inputBox.focus();
 
 }
@@ -78,16 +110,14 @@ if (document.readyState === 'loading') {
 /**
  * Create and return an 'li' element for inculusion in the shopping list.
  *
- * @param {string} itemName Name of the item to add to the list
- * @param {string} quantity
+ * @param {{name: string, quantity: string}} item Name of the item to add to the list/ append the list.
  * @return {HTMLElement} li element
  */
-function createNewListItem(itemName, quantity) {
+function createNewListItem(item) {
   const listItem = document.createElement('li');
 
   const listText = document.createElement('span');
-  listText.textContent = itemName;
-
+  listText.textContent = item.name;
 
   const deleteButton = document.createElement('i');
   listItem.appendChild(deleteButton).className = 'fa fa-trash';
@@ -101,10 +131,10 @@ function createNewListItem(itemName, quantity) {
 
   listItem.appendChild(listText);
 
-  if (quantity !== '') {
+  if (item.quantity !== '') {
     listItem.appendChild(document.createTextNode(' '));
     const span = document.createElement('span');
-    span.textContent = `(${quantity})`;   // '(' + quantity + ')'
+    span.textContent = `(${item.quantity})`;   // '(' + quantity + ')'
     listItem.appendChild(span);
   }
 

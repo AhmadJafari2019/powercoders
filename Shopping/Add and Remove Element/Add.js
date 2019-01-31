@@ -1,18 +1,43 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-  document.querySelector('button').addEventListener('click', function (event) {
-    let inputBox = document.getElementById('item');
-    let inputValue = inputBox.value;
-    let li = creatNewListItem(inputBox.value);
-    document.querySelector('ul').appendChild(li);
+  const inputBox = document.getElementById('item');
+  inputBox.focus();
+
+document.getElementById('button').addEventListener('click', function(event) {
+  if (inputBox.value.trim() === '' ){
+    return;
+  }
+  const element = document.createElement('li');
+  const elementText = document.createTextNode(inputBox.value.trim());
+  element.appendChild(elementText);
+  const ul = document.querySelector('ul');
+  ul.appendChild(element);
+  const deleteButton = document.createElement('button');
+  deleteButton.textContent ='delete';
+  element.appendChild(deleteButton);
+  inputBox.value = '';
+
   });
-  //Add code here that listen for 'keyup' on the 'input' element
-  document.querySelector('input').addEventListener('keyup', function (event) {
-    //and logs the event.key property
-    if (event.key === 'Enter') {
-      let inputBox = document.getElementById('item');
-      let li = creatNewListItem(inputBox.value);
-      document.querySelector('ul').appendChild(li);
-      //console.log(event.key);
-    }
+
+document.querySelector('input').addEventListener('keyup', function (event) {
+  if (inputBox.value.trim() === '' ){
+    return;
+  }
+
+  console.log(`Key is [${event.key}]`);
+  if (event.key !== ' '){
+    return;
+  }
+  const element = document.createElement('li');
+  const elementText = document.createTextNode(inputBox.value.trim());
+  element.appendChild(elementText);
+  const ul = document.querySelector('ul');
+  ul.appendChild(element);
+  const deleteButton = document.createElement('button');
+  deleteButton.textContent ='delete';
+  element.appendChild(deleteButton);
+  deleteButton.addEventListener('click', function (event) {
+    element.remove();
   });
+  inputBox.value = '';
+});
 });
