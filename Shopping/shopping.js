@@ -1,6 +1,7 @@
 function domContentLoaded() {
   /** Widget that the User types an item in to */
   const inputBox = document.getElementById('item');
+  inputBox.focus();
   const quantityBox = document.getElementById('quantity');
   const shoppingList = document.querySelector('ul');
   const addItemButton = document.querySelector('button');
@@ -32,11 +33,9 @@ function domContentLoaded() {
       return;
     }
 
-    const item = {
-      name: trimmedValue,
-      quantity: quantityBox.value,
-    };
-    shoppingList.appendChild(createNewListItem(item));
+    const item = new ShoppingListItem(trimmedValue, quantityBox.value.trim());
+
+    shoppingList.appendChild(item.toListItem());
     inputBox.value = '';
     quantityBox.value = '';
     addItemButton.disabled = true;
@@ -59,7 +58,7 @@ function domContentLoaded() {
 
     const item = new ShoppingListItem(trimmedValue, quantityBox.value.trim());
 
-    shoppingList.appendChild(createNewListItem(item));
+    shoppingList.appendChild(item.toListItem() );
     inputBox.value = '';
     quantityBox.value = '';
     addItemButton.disabled = true;
@@ -81,7 +80,7 @@ function domContentLoaded() {
 
     const item = new ShoppingListItem(trimmedValue, quantityBox.value.trim());
 
-    shoppingList.appendChild(createNewListItem(item));
+    shoppingList.appendChild(item.toListItem() );
     inputBox.value = '';
     quantityBox.value = '';
     addItemButton.disabled = true;
@@ -105,37 +104,9 @@ if (document.readyState === 'loading') {
 /**
  * Create and return an 'li' element for inculusion in the shopping list.
  *
- * @param {ShoppingListItem} item Name of the item to add to the list/ append the list.
  * @return {HTMLElement} li element
  */
-function createNewListItem(item) {
-  const listItem = document.createElement('li');
 
-  const listText = document.createElement('span');
-  listText.textContent = item.name;
-
-  const deleteButton = document.createElement('i');
-  listItem.appendChild(deleteButton).className = 'fa fa-trash';
-
-  deleteButton.addEventListener('click', function (event) {
-    console.log('Delete is clicked');
-    listItem.remove();
-    const inputBox = document.getElementById('item');
-    inputBox.focus();
-  });
-
-  listItem.appendChild(listText);
-
-  if (item.quantity !== '') {
-    listItem.appendChild(document.createTextNode(' '));
-    const span = document.createElement('span');
-    span.textContent = `(${item.quantity})`;   // '(' + quantity + ')'
-    listItem.appendChild(span);
-  }
-
-  listItem.appendChild(deleteButton);
-  return listItem;
-}
 
 
 function elseTest(num) {
@@ -166,5 +137,36 @@ function Person(first, last, interests) {
 function ShoppingListItem(name, quantity) {
   this.name = name;
   this.quantity = quantity;
+
+}
+
+ShoppingListItem.prototype.toListItem = function () {
+
+    const listItem = document.createElement('li');
+
+    const listText = document.createElement('span');
+    listText.textContent = this.name;
+
+    const deleteButton = document.createElement('i');
+    listItem.appendChild(deleteButton).className = 'fa fa-trash';
+
+    deleteButton.addEventListener('click', function (event) {
+      console.log('Delete is clicked');
+      listItem.remove();
+      const inputBox = document.getElementById('item');
+      inputBox.focus();
+    });
+
+    listItem.appendChild(listText);
+
+    if (this.quantity !== '') {
+      listItem.appendChild(document.createTextNode(' '));
+      const span = document.createElement('span');
+      span.textContent = `(${this.quantity})`;   // '(' + quantity + ')'
+      listItem.appendChild(span);
+    }
+
+    listItem.appendChild(deleteButton);
+    return listItem;
 
 }
