@@ -57,10 +57,7 @@ function domContentLoaded() {
       return;
     }
 
-    const item = {
-      name: trimmedValue,
-      quantity: quantityBox.value,
-    };
+    const item = new ShoppingListItem(trimmedValue, quantityBox.value.trim());
 
     shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
@@ -82,10 +79,8 @@ function domContentLoaded() {
       return;
     }
 
-    const item = {
-      name: trimmedValue,
-      quantity: quantityBox.value,
-    };
+    const item = new ShoppingListItem(trimmedValue, quantityBox.value.trim());
+
     shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
     quantityBox.value = '';
@@ -110,7 +105,7 @@ if (document.readyState === 'loading') {
 /**
  * Create and return an 'li' element for inculusion in the shopping list.
  *
- * @param {{name: string, quantity: string}} item Name of the item to add to the list/ append the list.
+ * @param {ShoppingListItem} item Name of the item to add to the list/ append the list.
  * @return {HTMLElement} li element
  */
 function createNewListItem(item) {
@@ -151,3 +146,25 @@ function elseTest(num) {
   }
 }
 
+function Person(first, last, interests) {
+  this.name = {
+    first: first,
+    last: last
+  };
+  this.interests = interests;
+  this.greet = function () {
+    console.log(`Hello ${this.name.first}`);
+  };
+}
+
+/**
+ * Represent an item in the Shopping list.
+ * @param name {string} Name of the item.
+ * @param quantity {string} Quantity of the item.
+ * @constructor
+ */
+function ShoppingListItem(name, quantity) {
+  this.name = name;
+  this.quantity = quantity;
+
+}
