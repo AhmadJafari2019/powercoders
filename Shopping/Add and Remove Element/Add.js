@@ -1,37 +1,35 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const inputBox = document.getElementById('item');
+  const inputBox =  document.getElementById('item');
   inputBox.focus();
-  document.querySelector('button').addEventListener('click', function () {
-    if (inputBox.value.trim() === '') {
+  document.querySelector('#button').addEventListener('click', function () {
+
+    const trimValue = inputBox.value.trim();
+    if (trimValue === ''){
       return;
     }
-    if (event.key !== ''){
-      return;
-    }
-    const element = document.createElement('li');
-    const elementText = document.createTextNode(inputBox.value.trim());
-    element.appendChild(elementText);
     const ul = document.querySelector('ul');
-    ul.appendChild(element)
+    const list = document.createElement('li');
+    const listText = document.createTextNode(inputBox.value.trim());
+    list.appendChild(listText);
+    ul.appendChild(list);
+    inputBox.focus();
     inputBox.value = '';
 
   });
   document.querySelector('input').addEventListener('keyup', function () {
-    if (inputBox.value.trim()===''){
-          return;
-    }
-    if (event.key !== 'Enter'){
+    const trimValue = inputBox.value.trim();
+    if (trimValue === ''){
       return;
-      if (event.key !== ' '){
-        return;
-      }
     }
-    const element = document.createElement('li');
-    const elementText = document.createTextNode(inputBox.value.trim());
-    element.appendChild(elementText);
-    const ul = document.querySelector('ul');
-    ul.appendChild(element)
-    inputBox.value = '';
-  });
+    if (event.key === 'Enter') {
 
+      const ul = document.querySelector('ul');
+      const list = document.createElement('li');
+      const listText = document.createTextNode(inputBox.value.trim());
+      list.appendChild(listText);
+      ul.appendChild(list);
+      inputBox.focus();
+      inputBox.value = '';
+    }
+  }) ;
 });

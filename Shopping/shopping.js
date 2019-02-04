@@ -13,7 +13,7 @@ function domContentLoaded() {
     if (listItem.length === 0) {
       clearButton.disabled = true;
     } else {
-      clearButton.disabled === false;
+      clearButton.disabled = false;
     }
     listItem.forEach(function (el) {
       el.remove();
@@ -21,10 +21,6 @@ function domContentLoaded() {
     clearButton.disabled = true;
     inputBox.focus();
   });
-
-  // lis[0]
-  // lis[1]
-  // lis[3]
 
   addItemButton.addEventListener('click', function (event) {
     const trimmedValue = inputBox.value.trim();
@@ -120,7 +116,7 @@ function elseTest(num) {
 function Person(first, last, interests) {
   this.name = {
     first: first,
-    last: last
+    last: last,
   };
   this.interests = interests;
   this.greet = function () {
