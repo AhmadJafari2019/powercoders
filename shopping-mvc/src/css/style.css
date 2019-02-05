@@ -1,0 +1,112 @@
+body{
+    background: url(../static/pic4.jpg);
+    background-size: cover;
+    z-index: 1;
+
+}
+
+#quantity {
+    width: 155px;
+    text-align: center;
+    margin: 0 0 0 0;
+
+}
+
+#wrapper {
+    width: 200px;
+    min-height: 100%;
+    float: left;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    z-index: -1;
+}
+
+#wrapper br {
+    border: 2px solid black;
+}
+
+#wrapper h1 span {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    animation: bounce .8s ease infinite alternate;
+    font-family: 'Titan One', cursive;
+    font-size: 60px;
+    color: darkgreen;
+    text-shadow: 0 3px 0 #ff0000,
+    0 2px 0 #CCC,
+    0 3px 0 #CCC,
+    0 4px 0 #CCC,
+    0 5px 0 #CCC,
+    0 6px 0 transparent,
+    0 7px 0 transparent,
+    0 8px 0 transparent,
+    0 9px 0 transparent,
+    0 10px 10px rgba(0, 0, 0, .4);
+    font-style: normal;
+    box-decoration-break: clone;
+    padding: 0.1em 0.7em;
+    border-radius: 0.2em;
+    background: #fff;
+    transform: skewX(-10deg);
+}
+label {
+    border-bottom: 3px solid black;
+    margin: 20px 0 0 0;
+}
+
+input{
+    margin: 15px 0 0 0;
+    width: 155px;
+    text-align: center ;
+}
+button{
+    border-top: 2px solid black;
+    margin: 15px 0 0 0 ;
+}
+
+#wrapper h1 span:nth-child(2) { animation-delay: .1s; }
+#wrapper h1 span:nth-child(3) { animation-delay: .2s; }
+#wrapper h1 span:nth-child(4) { animation-delay: .3s; }
+#wrapper h1 span:nth-child(5) { animation-delay: .4s; }
+#wrapper h1 span:nth-child(6) { animation-delay: .5s; }
+#wrapper h1 span:nth-child(7) { animation-delay: .6s; }
+#wrapper h1 span:nth-child(8) { animation-delay: .7s; }
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #CCC,
+        0 2px 0 #CCC,
+        0 3px 0 #CCC,
+        0 4px 0 #CCC,
+        0 5px 0 #CCC,
+        0 6px 0 #CCC,
+        0 7px 0 #CCC,
+        0 8px 0 #CCC,
+        0 9px 0 #CCC,
+        0 50px 25px rgba(0, 0, 0, .2);
+    }
+}
+
+button {
+    border-radius: 10px;
+    background: black;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid red;
+}
+
+#item-warning{
+    color: rgb(240, 0, 0);
+    font-size: 70%;
+    display: block;
+    margin-left: 1em;
+    margin-top: .4em;
+}
+
+#item-warning.hidden {
+    display: none;
+}
