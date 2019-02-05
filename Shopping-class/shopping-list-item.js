@@ -132,7 +132,7 @@ function Person(first, last, interests) {
  */
 // function ShoppingListItem(name, quantity) {
 //   this.name = name;
-  this.quantity = quantity;
+//this.quantity = quantity;
 //
 // }
 
@@ -178,3 +178,7 @@ class ShoppingListItem {
     return listItem;
   }
 }
+
+
+
+
