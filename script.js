@@ -1,40 +1,37 @@
-// Everything is an Object in JS, which makes the js unique from the others language.
-// Prototype makes the inheritance possible in js.
-// How to create an Object.
-var john = {
-        name: "John",
-        yearOfBirth: 1990,
-        job: 'teacher'
+//Passing a function as an argument.
+
+var years = [1990, 1965, 1917, 2005, 1998];
+
+function arrayCalc(arr, fn) {
+    let arrRes = [];
+    for (let i = 0; i < arr.length; i++) {
+        arrRes.push(fn(arr[i]));
+
     }
-    // How to create a function Constructor.
-
-var Person = function(name, yearOfBirth, job) {
-    this.name = name;
-    this.yearOfBirth = yearOfBirth;
-    this.job = job;
+    return arrRes;
 }
 
-Person.prototype.calculateAge = function() {
-    console.log(2019 - this.yearOfBirth);
-}
-
-Person.prototype.lastName = "NIK";
-
-var john = new Person("Ahmad", 1996, "Student");
-var jane = new Person("Jane", 1970, "Designer");
-var mark = new Person("Mark", 1950, "Corresponder");
-
-john.calculateAge();
-mark.calculateAge();
-jane.calculateAge();
-
-console.log(john.lastName);
-console.log(jane.lastName);
-console.log(mark.lastName);
-
-// Creating an Object which inherit from another Prototype.
-var personProto = {
-    calculateAge: function() {
-        console.log(2019 - this.yearOfBirth);
+function maxRate(el) {
+    if (el >= 18 && el <= 81) {
+        return Math.round(206 - (0.67 * el));
+    } else {
+        return -1;
     }
 }
+
+function isFullAge(el) {
+    return el >= 18;
+}
+
+function calculateAge(el) {
+    return 2019 - el;
+}
+
+let ages = arrayCalc(years, calculateAge);
+console.log(ages);
+
+let full = arrayCalc(ages, isFullAge);
+console.log(full);
+
+let rate = arrayCalc(ages, maxRate);
+console.log(rate);
