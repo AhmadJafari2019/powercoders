@@ -62,7 +62,43 @@ function interviewQuestion(job) {
 let teacherQuestion = interviewQuestion("St");
 teacherQuestion("john");
 
-let designerQusetion = interviewQuestion("Designer");
-designerQusetion('Mike');
-
+let designerQuestion = interviewQuestion("Designer");
+designerQuestion('Mike');
 interviewQuestion('teacher')('Gabi');
+
+//Closure the advanced subject in js
+function retirement(retirementAge) {
+    var a = " years left until retirement: "
+    return function(yearOfBirth) {
+        var age = 2019 - yearOfBirth;
+        console.log((retirementAge - age) + a);
+    }
+}
+
+var retirementUS = retirement(66);
+var retirementGM = retirement(65);
+var retirementIS = retirement(67);
+retirementUS(1990);
+retirementGM(1975);
+retirementIS(1997);
+
+// Challenge 
+function interviewQuestion(job) {
+    return function(name) {
+        if (job === 'Designer') {
+            console.log("What is the UX " + name + '?');
+        } else if (job === 'teacher') {
+            console.log("What do you teach " + name + '?')
+        } else {
+            console.log("Hello, Can i know what do you do?")
+        }
+    }
+}
+
+
+
+
+
+interviewQuestion('Designer')('john');
+interviewQuestion('teacher')('Mike');
+interviewQuestion('Student')('Gabi');
