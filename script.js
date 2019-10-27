@@ -35,3 +35,34 @@ console.log(full);
 
 let rate = arrayCalc(ages, maxRate);
 console.log(rate);
+
+// returning a function by a function 
+
+function interviewQuestion(job) {
+    if (job === "teacher") {
+        return function(name) {
+            console.log("What do you teach today " + name + "?");
+        }
+    } else if (job === 'Designer') {
+        return function(name) {
+            console.log("What is the UX " + name + "?");
+        }
+    } else if (job === 'Student') {
+        return function(name) {
+            console.log("What is your major today?");
+        }
+    } else {
+        return function(name) {
+            console.log("What do you do " + name + "?");
+        }
+    }
+}
+
+
+let teacherQuestion = interviewQuestion("St");
+teacherQuestion("john");
+
+let designerQusetion = interviewQuestion("Designer");
+designerQusetion('Mike');
+
+interviewQuestion('teacher')('Gabi');
