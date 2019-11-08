@@ -94,11 +94,74 @@ function interviewQuestion(job) {
         }
     }
 }
-
-
-
-
-
 interviewQuestion('Designer')('john');
 interviewQuestion('teacher')('Mike');
 interviewQuestion('Student')('Gabi');
+
+// bind call and apply Method.
+
+var john = {
+    name: "John",
+    age: "34",
+    job: "Teacher",
+    presentation: function(style, timeOfDay) {
+        if (style === 'formal') {
+            console.log('Good ' + timeOfDay + ' Ladies and Gentelmen! i\'m ' + this.name + ' I\'m a ' + this.job + ' I\'m ' + this.age + ' years old');
+        } else if (style === 'friendly') {
+            console.log('Hey, What\'s up?' + ' I\'m ' + this.name + ' I\'m  a ' + this.job + ' I\'m ' + this.age + " years old. Have a nice " + timeOfDay);
+        }
+    }
+};
+var emily = {
+    name: "Emily",
+    age: 35,
+    job: "designer"
+}
+var patrick = {
+    name: "Patrick",
+    age: 50,
+    job: "designer"
+}
+
+john.presentation('formal', 'morning');
+john.presentation.call(emily, 'friendly', 'Afternoon');
+
+let johnFriendly = john.presentation.apply(patrick, ['friendly', 'Morning']);
+let patrickFriendly = john.presentation.bind(this, 'friendly');
+patrickFriendly("Afternoon");
+patrickFriendly('Everytime');
+
+
+
+
+var years = [1990, 1965, 1917, 2005, 1998];
+
+function arrayCalc(arr, fn) {
+    let arrRes = [];
+    for (let i = 0; i < arr.length; i++) {
+        arrRes.push(fn(arr[i]));
+    }
+    return arrRes;
+}
+
+function maxRate(el) {
+    if (el >= 18 && el <= 81) {
+        return Math.round(206 - (0.67 * el));
+    } else {
+        return -1;
+    }
+}
+
+function isFullAge(limit, el) {
+    return el >= limit;
+}
+
+function calculateAge(el) {
+    return 2019 - el;
+}
+
+let age = arrayCalc(years, calculateAge);
+console.log(age);
+
+var fullAge = arrayCalc(age, isFullAge.bind(this, 20));
+console.log(fullAge);
