@@ -168,6 +168,41 @@
 
 // function constructor and Closure and put it in a function invoke
 
+// (function() {
+
+//     function Question(question, answeres, correct) {
+//         this.question = question;
+//         this.answeres = answeres;
+//         this.correct = correct;
+//     }
+//     // Writing the method to print the Question and answers in the Console.
+//     Question.prototype.displayQuestion = function() {
+//         console.log(this.question);
+//         for (let i = 0; i < this.answeres.length; i++) {
+//             console.log(i + ':' + this.answeres[i]);
+//         }
+//     }
+
+//     Question.prototype.checkAnswer = function(ans) {
+//         if (ans === this.correct) {
+//             console.log('Correct Answer !');
+//         } else {
+//             console.log('Wrong Answer !!!');
+//         }
+//     }
+
+//     let q1 = new Question('Is the js the coolest language?', ['Yes', 'No'], 0);
+//     let q2 = new Question('What is the name of this Course\'s teacher ?', ['Nik', 'Michel', 'Albert'], 2);
+//     let q3 = new Question('What does best describe Coding?', ['Fun', 'Boring', 'Hard'], 2);
+//     let questions = [q1, q2, q3];
+//     let n = Math.floor(Math.random() * questions.length);
+//     questions[n].displayQuestion();
+//     let answer = parseInt(prompt('Please select the Correct answer.'));
+//     questions[n].checkAnswer(answer);
+// })();
+
+// Starting the second part of challenge to evaluate the function for different Question.
+
 (function() {
 
     function Question(question, answeres, correct) {
@@ -183,20 +218,49 @@
         }
     }
 
-    Question.prototype.checkAnswer = function(ans) {
+    Question.prototype.checkAnswer = function(ans, callback) {
+        let sc;
         if (ans === this.correct) {
             console.log('Correct Answer !');
+            sc = callback(true);
         } else {
             console.log('Wrong Answer !!!');
+            sc = callback(false);
         }
+        this.displayScore(sc);
+    }
+    Question.prototype.displayScore = function(score) {
+        console.log('Your Current Score is :' + score);
+        console.log('------------------------------------------------');
     }
 
     let q1 = new Question('Is the js the coolest language?', ['Yes', 'No'], 0);
     let q2 = new Question('What is the name of this Course\'s teacher ?', ['Nik', 'Michel', 'Albert'], 2);
     let q3 = new Question('What does best describe Coding?', ['Fun', 'Boring', 'Hard'], 2);
     let questions = [q1, q2, q3];
-    let n = Math.floor(Math.random() * questions.length);
-    questions[n].displayQuestion();
-    let answer = parseInt(prompt('Please select the Correct answer.'));
-    questions[n].checkAnswer(answer);
+
+    function score() {
+        let sc = 0;
+        return function(correct) {
+            if (correct) {
+                sc++;
+            }
+            return sc;
+        }
+
+    }
+    let keepScore = score();
+
+    function nextQuestion() {
+
+        let n = Math.floor(Math.random() * questions.length);
+        questions[n].displayQuestion();
+        let answer = prompt('Please select the Correct answer.');
+        if (answer !== 'exit') {
+            questions[n].checkAnswer(parseInt(answer), keepScore);
+            nextQuestion();
+        }
+
+    }
+    nextQuestion();
 })();
