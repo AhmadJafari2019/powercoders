@@ -266,34 +266,39 @@
 // })();
 
 
-// Write a function constructor
-function Question(question, answeres, correct) {
-    this.question = question;
-    this.answeres = answeres;
-    this.correct = correct;
-}
+//Write an invoke function and put all the the function for this task inside it.
 
-//Write a method to display the question and answer in the console.
-Question.prototype.displayQuestion = function() {
-    console.log(this.question);
-    for (let i = 0; i < this.answeres.length; i++) {
-        console.log(i + ':' + this.answeres[i]);
-    }
-}
+(function() {
 
-// Write a method to check the correct answer.
-Question.prototype.checkAnswer = function(ans) {
-    if (ans === this.correct) {
-        console.log("Correct Answer !");
-    } else {
-        console.log("Wrong Answer !!!. Try for a second time.");
+    // Write a function constructor
+    function Question(question, answeres, correct) {
+        this.question = question;
+        this.answeres = answeres;
+        this.correct = correct;
     }
-}
-let q1 = new Question("Who is the best Player in the World?", ["Maradona", "Pele", "Zaydan"], 0);
-let q2 = new Question("Who won the Champion cup in Brazil?", ["Brazil", "Germany", "Argentina"], 1);
-let q3 = new Question("Which Country  has more population?", ["Swiss", "America", "China"], 2);
-let questions = [q1, q2, q3];
-let n = Math.floor(Math.random() * questions.length);
-questions[n].displayQuestion();
-let answer = prompt("Please select the correct answer.");
-questions[n].checkAnswer(parseInt(answer));
+
+    //Write a method to display the question and answer in the console.
+    Question.prototype.displayQuestion = function() {
+        console.log(this.question);
+        for (let i = 0; i < this.answeres.length; i++) {
+            console.log(i + ':' + this.answeres[i]);
+        }
+    }
+
+    // Write a method to check the correct answer.
+    Question.prototype.checkAnswer = function(ans) {
+        if (ans === this.correct) {
+            console.log("Correct Answer !");
+        } else {
+            console.log("Wrong Answer !!!. Try for a second time.");
+        }
+    }
+    let q1 = new Question("Who is the best Player in the World?", ["Maradona", "Pele", "Zaydan"], 0);
+    let q2 = new Question("Who won the Champion cup in Brazil?", ["Brazil", "Germany", "Argentina"], 1);
+    let q3 = new Question("Which Country  has more population?", ["Swiss", "America", "China"], 2);
+    let questions = [q1, q2, q3];
+    let n = Math.floor(Math.random() * questions.length);
+    questions[n].displayQuestion();
+    let answer = prompt("Please select the correct answer.");
+    questions[n].checkAnswer(parseInt(answer));
+})();
