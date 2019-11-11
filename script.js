@@ -336,6 +336,4 @@
     }
     nextQuestion();
 })();
-
-
-//Finish....
+//Just add to test the git structure in the command line.
