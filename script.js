@@ -286,19 +286,53 @@
     }
 
     // Write a method to check the correct answer.
-    Question.prototype.checkAnswer = function(ans) {
+    Question.prototype.checkAnswer = function(ans, callback) {
+        let sc;
         if (ans === this.correct) {
+
             console.log("Correct Answer !");
+            sc = callback(true);
+
         } else {
             console.log("Wrong Answer !!!. Try for a second time.");
+            sc = callback(false);
         }
+        this.displayScore(sc);
+
+    }
+
+    Question.prototype.displayScore = function(score) {
+        console.log('Your current Score is:' + score);
+        console.log('------------------------------------------');
     }
     let q1 = new Question("Who is the best Player in the World?", ["Maradona", "Pele", "Zaydan"], 0);
     let q2 = new Question("Who won the Champion cup in Brazil?", ["Brazil", "Germany", "Argentina"], 1);
     let q3 = new Question("Which Country  has more population?", ["Swiss", "America", "China"], 2);
     let questions = [q1, q2, q3];
-    let n = Math.floor(Math.random() * questions.length);
-    questions[n].displayQuestion();
-    let answer = prompt("Please select the correct answer.");
-    questions[n].checkAnswer(parseInt(answer));
+
+    function score() {
+        let sc = 0;
+        return function(correct) {
+            if (correct) {
+                sc++;
+            }
+            return sc;
+        }
+    }
+
+    let keepScore = score();
+
+    function nextQuestion() {
+
+        let n = Math.floor(Math.random() * questions.length);
+        questions[n].displayQuestion();
+        let answer = prompt("Please select the correct answer.");
+
+        if (answer !== 'exit') {
+            questions[n].checkAnswer(parseInt(answer), keepScore);
+            nextQuestion();
+        }
+
+    }
+    nextQuestion();
 })();
