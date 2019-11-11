@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="94b44525-4e25-4486-81e0-c6d4b7915912" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../scratsch/objects/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scratsch/objects/object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Add and Remove Element/Add and remove.html" beforeDir="false" afterPath="$PROJECT_DIR$/Add and Remove Element/Add and remove.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Add and Remove Element/Add.css" beforeDir="false" afterPath="$PROJECT_DIR$/Add and Remove Element/Add.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Add and Remove Element/Add.js" beforeDir="false" afterPath="$PROJECT_DIR$/Add and Remove Element/Add.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Shopping$index_html.dat" NAME="index.html Coverage Results" MODIFIED="1547757729008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="591" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shopping.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-156">
+              <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>lis</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/HTML.txt.html" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/shopping.js" />
+        <option value="$PROJECT_DIR$/Add and Remove Element/Add and remove.html" />
+        <option value="$PROJECT_DIR$/Add and Remove Element/Add.css" />
+        <option value="$PROJECT_DIR$/Add and Remove Element/Add.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="31" />
+    <option name="y" value="23" />
+    <option name="width" value="1249" />
+    <option name="height" value="726" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <sortByType Scope="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shopping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="Add and Remove Element" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Add and remove.html">
+    <configuration name="Add and remove.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Shopping/Add and Remove Element/Add and remove.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Shopping/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Add and remove.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94b44525-4e25-4486-81e0-c6d4b7915912" name="Default Changelist" comment="" />
+      <created>1546851481175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546851481175</updated>
+      <workItem from="1546851482577" duration="25825000" />
+      <workItem from="1546980255592" duration="184000" />
+      <workItem from="1547018623113" duration="518000" />
+      <workItem from="1547107109507" duration="10207000" />
+      <workItem from="1547129671238" duration="25000" />
+      <workItem from="1547129727685" duration="2811000" />
+      <workItem from="1547162304706" duration="367000" />
+      <workItem from="1547193953894" duration="16420000" />
+      <workItem from="1547414586071" duration="7988000" />
+      <workItem from="1547452814523" duration="30000" />
+      <workItem from="1547452859706" duration="13247000" />
+      <workItem from="1547540813409" duration="7391000" />
+      <workItem from="1547561673686" duration="270000" />
+      <workItem from="1547590778071" duration="15176000" />
+      <workItem from="1547759696925" duration="13258000" />
+      <workItem from="1547816654410" duration="32572000" />
+      <workItem from="1548151271823" duration="2358000" />
+      <workItem from="1548662666548" duration="23488000" />
+      <workItem from="1548792874058" duration="16792000" />
+      <workItem from="1549000447549" duration="3783000" />
+      <workItem from="1549009675879" duration="675000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added an Input an label Element">
+      <created>1546856461958</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546856461959</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Modify a new ELement&#10;and logging with console.log">
+      <created>1546868220941</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1546868220941</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Element to the DOM.&#10;Remove Element from the DOM.">
+      <created>1546980383293</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546980383293</updated>
+    </task>
+    <task id="LOCAL-00004" summary="---Create Shopping List---&#10;- Using Keyup event to the Js file.&#10;- Using if  that statement conditionally executes a group of statements, depending on the value of an expression.&#10;- Adding Enter Key.">
+      <created>1547127975983</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1547127975983</updated>
+    </task>
+    <task id="LOCAL-00005" summary="-- Using (variable.value = '';) to make input empty.">
+      <created>1547131091891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547131091891</updated>
+    </task>
+    <task id="LOCAL-00006" summary="-- fixing inputBox(empty / spacedealing)---&#10;Using if function&#10;Using element.trim()">
+      <created>1547213684749</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1547213684749</updated>
+    </task>
+    <task id="LOCAL-00007" summary="--- fixing inputBox(disabled/ enabled)---&#10;- Using property disabled = true;&#10;- Using property disbleed = false;">
+      <created>1547218573969</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1547218573969</updated>
+    </task>
+    <task id="LOCAL-00008" summary="--- Replacing let with Const---&#10;- Using Const instead of let">
+      <created>1547220208136</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1547220208136</updated>
+    </task>
+    <task id="LOCAL-00009" summary="--- Text about the Definision of the shopping js line byline---">
+      <created>1547452967110</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1547452967110</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- Using the async in javaScript-&#10;- Create a new Function domContentLoaded and put all of the last function inside it.">
+      <created>1548690966598</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1548690966598</updated>
+    </task>
+    <task id="LOCAL-00011" summary="- Add Quantity Input in html-&#10;- Set the keyup event for that in js file-">
+      <created>1548777029046</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1548777029046</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- Add Quantity Input in html-&#10;- Set the keyup event for that in js file-">
+      <created>1548777204284</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1548777204284</updated>
+    </task>
+    <task id="LOCAL-00013" summary="- Add Quantity Input in html-&#10;- Set the keyup event for that in js file-">
+      <created>1548777238735</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1548777238735</updated>
+    </task>
+    <task id="LOCAL-00014" summary="- Using javaScript object Notation-">
+      <created>1548942110013</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1548942110013</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="193385000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="31" y="23" width="1249" height="726" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49886104" visible="true" weight="0.23941368" />
+      <window_info id="Structure" order="1" sideWeight="0.5011389" side_tool="true" weight="0.23987292" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32810047" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39589906" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32876712" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4985694" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" weight="0.32791328" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.3280757" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3895899" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.6138934" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49886104" visible="true" weight="0.23987292" />
+      <window_info id="Structure" order="1" sideWeight="0.5011389" side_tool="true" visible="true" weight="0.23987292" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32810047" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39863014" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49928468" weight="0.32876712" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4985694" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" weight="0.32791328" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.39096573" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.6138934" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Initial Selecton for the List Items.&#10;&#10;&#10;- Basic HTML&#10;-Empty CSS file&#10;-Empty JS file" />
+    <MESSAGE value="Added an Input an label Element" />
+    <MESSAGE value="Modify a new ELement&#10;and logging with console.log" />
+    <MESSAGE value="Add Element to the DOM.&#10;Remove Element from the DOM." />
+    <MESSAGE value="---Create Shopping List---&#10;- Using Keyup event to the Js file.&#10;- Using if  that statement conditionally executes a group of statements, depending on the value of an expression.&#10;- Adding Enter Key." />
+    <MESSAGE value="-- Using (variable.value = '';) to make input empty." />
+    <MESSAGE value="-- fixing inputBox(empty / spacedealing)---&#10;Using if function&#10;Using element.trim()" />
+    <MESSAGE value="--- fixing inputBox(disabled/ enabled)---&#10;- Using property disabled = true;&#10;- Using property disbleed = false;" />
+    <MESSAGE value="--- Replacing let with Const---&#10;- Using Const instead of let" />
+    <MESSAGE value="--- Text about the Definision of the shopping js line byline---" />
+    <MESSAGE value="- Using the async in javaScript-&#10;- Create a new Function domContentLoaded and put all of the last function inside it." />
+    <MESSAGE value="- Add Quantity Input in html-&#10;- Set the keyup event for that in js file-" />
+    <MESSAGE value="- Using javaScript object Notation-" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Using javaScript object Notation-" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../cheatsheet/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Flex/Add and Remove Element/Add and remove.html" />
+    <entry file="file://$PROJECT_DIR$/HTML.txt.html" />
+    <entry file="file://$PROJECT_DIR$/shopping.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pic4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Add and Remove Element/Add.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Add and Remove Element/Add and remove.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Add and Remove Element/Add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

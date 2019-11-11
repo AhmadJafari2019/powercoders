@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="ui.js" async></script>
+    <script src="shopping-list-item.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>
+        <span>Sales</span>
+       </h1>
+      <div>
+        <label class="text" for="item">Enter a new item:</label>
+        <input type="text" id="item" placeholder="Type something to buy">
+        <br><br>
+        
+        <input type="text" id="quantity" placeholder="quantity">
+        <br>
+
+        <button id="add"><i class="fas fa-shopping-basket fa-2x"></i></button>
+        <button id="clear">Clear list</button>
+        <span id="item-warning" class="hidden"> You must enter some text before adding an item</span>
+
+      </div>
+      <ul>
+
+      </ul>
+    </div>
+  </body>
+</html>

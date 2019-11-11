@@ -1,0 +1,40 @@
+body {
+font-family: 'Inconsolata', monospace;
+}
+
+  h1 {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: #222229;
+    margin-bottom: 30px;
+    border: 2px solid #1219d8;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 60px;
+    font-variant-caps: normal;
+    background-color:#86d2d2;
+  }
+
+#git {
+  border:5px solid black;
+  padding:20px;
+  }
+  
+  table {
+    border-spacing: 1em .5em;
+  }
+
+  .puzzle th, td {
+
+    border: 5px solid #9f1db9;
+    border-radius: 10%;
+    background-color: rgba(16, 118, 191, .7);
+    color: #fff;
+    padding: 20px;
+    text-aalign: center;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-transition-timing-function: auto;
+    margin: 20px;
+  }
